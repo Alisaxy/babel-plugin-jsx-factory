@@ -1,14 +1,14 @@
 # babel-plugin-jsx-factory
 ### specialized for [Maquette](https://github.com/AFASSoftware/maquette):
 
-*Usage:*
-[Eslisp](https://github.com/anko/eslisp)
+*Usage [Eslisp](https://github.com/anko/eslisp):*
 ``` lisp
 (var babel (require "babel"))
 (var transformed
   (babel.transform jsxInputString
      (object plugins (array "babel-plugin-jsx-factory"))))
 ```
+*Usage JS:*
 ``` js
 var babel = require('babel');
 var transformed = babel.transform(jsxInputString, {plugins: ['babel-plugin-jsx-factory']});
