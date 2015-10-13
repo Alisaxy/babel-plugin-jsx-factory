@@ -1,6 +1,21 @@
-# babel-plugin-jsx-factory,
+# babel-plugin-jsx-factory
 ### specialized for [Maquette](https://github.com/AFASSoftware/maquette):
 
+*Usage:*
+[Eslisp](https://github.com/anko/eslisp)
+``` lisp
+(var babel (require "babel"))
+(var transformed
+  (babel.transform jsxInputString
+     (object plugins (array "babel-plugin-jsx-factory"))))
+```
+``` js
+var babel = require('babel');
+var transformed = babel.transform(jsxInputString, {plugins: ['babel-plugin-jsx-factory']});
+```
+**Note:** adding jsxPragma is redundant as it is not used in this fork.
+
+## Original readme:
 Use `jsx` with a factory function `h` matching this signature:
 
 ``` js
