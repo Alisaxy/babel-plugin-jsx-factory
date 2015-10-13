@@ -1,4 +1,4 @@
-# babel-plugin-jsx-factory
+# babel-plugin-jsx-factory, specialized for Maquette: https://github.com/AFASSoftware/maquette
 
 Use `jsx` with a factory function `h` matching this signature:
 
